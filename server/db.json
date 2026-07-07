@@ -1,0 +1,114 @@
+{
+  "properties": [
+    {
+      "id": 1,
+      "isVIP": true,
+      "img": "/images/product1.webp",
+      "gallery": [
+        "/images/detail-product-1.webp",
+        "/images/detail-product-2.webp",
+        "/images/detail-product-3.webp"
+      ],
+      "title": "آپارتمان نوساز با طراحی مینیمال در زعفرانیه",
+      "description": "آپارتمان لوکس و نوساز واقع در منطقه ممتاز زعفرانیه تهران با طراحی مینیمال و معماری مدرن. این واحد VIP دارای ۴ خواب بزرگ، نورگیری عالی و متریال درجه یک اروپایی است. مناسب برای زندگی لاکچری در یکی از گران‌ترین مناطق پایتخت با دسترسی سریع به مراکز اصلی شهر. وجود استخر، پارکینگ اختصاصی و طراحی هوشمند، این ملک را به گزینه‌ای ایده‌آل تبدیل کرده است. سال ساخت ۱۴۰۲ و کیفیت ساخت بسیار بالا، ارزش سرمایه‌گذاری این ملک را افزایش می‌دهد.",
+      "place": "تهران، زعفرانیه",
+      "price": 250000000000,
+      "estateCode": "A-001",
+      "details": {
+        "bedroom": 4,
+        "area": 320,
+        "parking": 2,
+        "pool": true,
+        "yearBuilt": 1402
+      }
+    },
+    {
+      "id": 2,
+      "isVIP": false,
+      "img": "/images/product2.webp",
+      "gallery": [
+        "/images/detail-product-4.webp",
+        "/images/detail-product-5.webp",
+        "/images/detail-product-6.webp"
+      ],
+      "title": "ویلای دوبلکس با حیاط اختصاصی",
+      "description": "ویلای دوبلکس با طراحی کاربردی و حیاط اختصاصی در منطقه خوش‌آب‌وهوای نیاوران تهران. این ملک دارای ۷ خواب بزرگ، فضای داخلی وسیع و نور طبیعی مناسب در تمام بخش‌ها است. مناسب برای خانواده‌های پرجمعیت که به دنبال آرامش و فضای سبز اختصاصی هستند. پارکینگ اختصاصی، معماری مدرن و دسترسی عالی از ویژگی‌های برجسته این ویلا است. ساخته شده در سال ۱۴۰۰ با کیفیت مناسب و گزینه‌ای اقتصادی‌تر در میان ویلاهای شمال تهران با ارزش سکونتی بالا.",
+      "place": "تهران، نیاوران",
+      "price": 32000000000,
+      "estateCode": "A-002",
+      "details": {
+        "bedroom": 7,
+        "area": 350,
+        "parking": 1,
+        "pool": false,
+        "yearBuilt": 1400
+      }
+    },
+    {
+      "id": 3,
+      "isVIP": false,
+      "img": "/images/product3.webp",
+      "gallery": [
+        "/images/detail-product-7.webp",
+        "/images/detail-product-8.webp",
+        "/images/detail-product-9.webp"
+      ],
+      "title": "ویلای مدرن با طراحی اروپایی",
+      "description": "ویلای لوکس با طراحی مدرن اروپایی در منطقه الهیه تهران، یکی از خاص‌ترین لوکیشن‌های پایتخت. این ملک با ۹ خواب بزرگ، فضای داخلی بسیار وسیع و طراحی معماری منحصر‌به‌فرد ارائه شده است. مناسب برای افرادی که به دنبال سبک زندگی فوق‌لوکس و متفاوت هستند. دارای ۴ جای پارک، متریال وارداتی و پلان باز که حس یک خانه مدرن جهانی را منتقل می‌کند. ساخته شده در سال ۱۴۰۰ و یک گزینه ممتاز برای سرمایه‌گذاری سطح بالا در بازار املاک لوکس تهران.",
+      "place": "تهران، الهیه ",
+      "price": 95000000000,
+      "estateCode": "A-003",
+      "details": {
+        "bedroom": 9,
+        "area": 640,
+        "parking": 4,
+        "pool": false,
+        "yearBuilt": 1400
+      }
+    }
+  ],
+  "users": [
+    {
+      "id": "1781607186572",
+      "fullName": "Testt",
+      "email": "test@gmail.com",
+      "password": "Test123",
+      "favorites": [
+        "3",
+        "2"
+      ],
+      "token": "01d8c7a47e5bba1102523e2e3b1ea0f154d5212196fce31069e4ff6f6c68ae37",
+      "createdAt": "2026-06-16T10:53:06.572Z"
+    },
+    {
+      "id": "1781617306918",
+      "fullName": "Sadra",
+      "email": "Sadranosrati2222@gmail.com",
+      "password": "Sadra123",
+      "favorites": [
+        "3",
+        "2"
+      ],
+      "token": null,
+      "createdAt": "2026-06-16T13:41:46.918Z"
+    },
+    {
+      "id": "1783186812140",
+      "fullName": "Sadra",
+      "email": "Sadranosrati3333@gmail.com",
+      "password": "Sadra123",
+      "favorites": [],
+      "token": null,
+      "createdAt": "2026-07-04T17:40:12.140Z"
+    },
+    {
+      "id": "1783320984287",
+      "fullName": "Sad",
+      "email": "Sadranosrati7777@gmail.com",
+      "password": "Sadra1234",
+      "favorites": [],
+      "token": "65d912192d303532c0714dcf6b5264bbd5531efcc3cc56c6a5ac3e5b85641730",
+      "createdAt": "2026-07-06T06:56:24.287Z"
+    }
+  ]
+}

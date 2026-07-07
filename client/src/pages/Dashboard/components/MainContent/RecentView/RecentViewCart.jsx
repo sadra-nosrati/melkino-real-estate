@@ -1,0 +1,44 @@
+import { useProperties } from "@/context/PropertiesContext";
+
+function RecentViewCart() {
+  const { properties } = useProperties();
+
+  return (
+    <>
+      {properties.map((item) => {
+        const Random = Math.floor(Math.random() * 100);
+
+        return (
+          <article
+            key={item.id}
+            className="w-full h-24 tablet-portrait:h-28 bg-[#201F1F]/60 flex items-center rounded-xl border border-[#F2CA50]/15 px-3 tablet-portrait:px-4 transition-all duration-300 hover:-translate-y-1 hover:border-[#F2CA50]/30 hover:bg-[#201F1F]/80 hover:shadow-[0_10px_30px_rgba(242,202,80,0.06)]"
+          >
+            <div className="flex items-center gap-3 tablet-portrait:gap-5 w-full">
+              <img
+                className="h-14 w-14 tablet-portrait:h-20 tablet-portrait:w-20 rounded-md object-cover flex-shrink-0"
+                src={item.img}
+                alt={item.title}
+              />
+
+              <div className="min-w-0 flex-1">
+                <h3 className="mb-1 line-clamp-1 text-sm tablet-portrait:text-base">
+                  {item.title}
+                </h3>
+
+                <p className="text-[#D0C5AF] text-xs tablet-portrait:text-sm mb-1">
+                  {item.details.area} متر بنا
+                </p>
+
+                <p className="text-[10px] tablet-portrait:text-xs text-[#F2CA50]">
+                  {Random} ساعت پیش
+                </p>
+              </div>
+            </div>
+          </article>
+        );
+      })}
+    </>
+  );
+}
+
+export default RecentViewCart;
