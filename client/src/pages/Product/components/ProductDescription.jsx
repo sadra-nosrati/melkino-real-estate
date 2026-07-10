@@ -5,7 +5,7 @@ function ProductDescription() {
 
   return (
     <section className="text-white shadow-sm">
-      <h2 className="mb-4 text-lg text-[#F2CA50]">توضیحات ملک</h2>
+      <h2 className="mb-4 text-lg text-dark-primary">توضیحات ملک</h2>
 
       <p className="text-sm tablet-landscape:text-sm leading-7 tablet-landscape:leading-8 text-gray-300 tracking-wide">
         {property?.description}

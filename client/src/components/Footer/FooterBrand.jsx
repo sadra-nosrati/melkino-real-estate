@@ -1,7 +1,7 @@
 function FooterBrand() {
   return (
     <div className="flex flex-col items-center tablet-landscape:items-start text-center tablet-landscape:text-right">
-      <h1 className="text-lg font-semibold tracking-wide text-white/90 transition-colors duration-300 hover:text-[#F2CA50]">
+      <h1 className="text-lg font-semibold tracking-wide text-white/90 transition-colors duration-300 hover:text-dark-primary">
         Melkino
       </h1>
 

@@ -58,7 +58,7 @@ function Form({ mode = "login" }) {
 
       <button
         type="submit"
-        className="group flex h-12 tablet-landscape:h-14 w-full items-center justify-center gap-2 tablet-landscape:gap-3 rounded-xl tablet-landscape:rounded-2xl bg-[#F2CA50] text-sm tablet-landscape:text-base font-medium text-black transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_10px_30px_rgba(242,202,80,0.25)] active:scale-[0.98] cursor-pointer"
+        className="group flex h-12 tablet-landscape:h-14 w-full items-center justify-center gap-2 tablet-landscape:gap-3 rounded-xl tablet-landscape:rounded-2xl bg-dark-primary text-sm tablet-landscape:text-base font-medium text-black transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_10px_30px_rgba(242,202,80,0.25)] active:scale-[0.98] cursor-pointer"
       >
         {isLogin ? "ورود به پنل" : "ساخت حساب کاربری"}
 

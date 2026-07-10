@@ -17,11 +17,11 @@ function ProductCardMedia({ property }) {
     <div className="relative">
       <div className="absolute top-3 left-3 right-3 z-10 flex items-center justify-between">
         {property?.isVIP === true ? (
-          <span className="bg-[#F2CA50] py-1 px-2 mobile-landscape:px-3 rounded text-[#131313] text-[11px] mobile-landscape:text-xs">
+          <span className="bg-dark-primary py-1 px-2 mobile-landscape:px-3 rounded text-dark-background-secondary text-[11px] mobile-landscape:text-xs">
             ویژه
           </span>
         ) : (
-          <div className="w-[52px]" />
+          <div className="w-13" />
         )}
         <button
           onClick={(e) => {
@@ -46,9 +46,9 @@ function ProductCardMedia({ property }) {
           className="flex items-center justify-center w-8 h-8 mobile-landscape:w-9 mobile-landscape:h-9 rounded-lg mobile-landscape:rounded-xl bg-black/30 backdrop-blur-md cursor-pointer group"
         >
           {isFavorite ? (
-            <FaRegHeart className="text-[#F2CA50] text-base mobile-landscape:text-lg transition-all duration-300 scale-125 active:scale-150" />
+            <FaRegHeart className="text-dark-primary text-base mobile-landscape:text-lg transition-all duration-300 scale-125 active:scale-150" />
           ) : (
-            <FaRegHeart className="text-white text-base mobile-landscape:text-lg transition-all duration-300 group-hover:text-[#F2CA50]" />
+            <FaRegHeart className="text-white text-base mobile-landscape:text-lg transition-all duration-300 group-hover:text-dark-primary" />
           )}
         </button>
       </div>

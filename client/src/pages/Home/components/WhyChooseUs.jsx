@@ -39,11 +39,11 @@ function WhyChooseUs() {
           return (
             <article
               key={i}
-              className="group relative overflow-hidden rounded-3xl border border-white/10 bg-[#1A1A1A] p-6 tablet-portrait:p-8 transition-all duration-300 hover:-translate-y-2 hover:border-[#D4AF37]/40 hover:shadow-[0_0_40px_rgba(212,175,55,0.08)]"
+              className="group relative overflow-hidden rounded-3xl border border-white/10 bg-[#1A1A1A] p-6 tablet-portrait:p-8 transition-all duration-300 hover:-translate-y-2 hover:border-dark-primary-active/40 hover:shadow-[0_0_40px_rgba(212,175,55,0.08)]"
             >
-              <div className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-[#D4AF37] to-transparent" />
+              <div className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-dark-primary-active to-transparent" />
 
-              <div className="mb-5 tablet-portrait:mb-6 flex h-14 w-14 tablet-portrait:h-16 tablet-portrait:w-16 items-center justify-center rounded-full border border-[#D4AF37]/20 bg-[#D4AF37]/10 text-2xl tablet-portrait:text-3xl text-[#D4AF37] transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">
+              <div className="mb-5 tablet-portrait:mb-6 flex h-14 w-14 tablet-portrait:h-16 tablet-portrait:w-16 items-center justify-center rounded-full border border-dark-primary-active/20 bg-dark-primary-active/10 text-2xl tablet-portrait:text-3xl text-dark-primary-active transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">
                 <Icon />
               </div>
 

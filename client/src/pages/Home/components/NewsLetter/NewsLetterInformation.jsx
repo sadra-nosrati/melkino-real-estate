@@ -1,13 +1,13 @@
 function NewsLetterInformation() {
   return (
     <div className="w-full tablet-landscape:w-1/2 text-center tablet-landscape:text-right">
-      <h3 className="text-[#F2CA50] text-xs">NEWSLETTER</h3>
+      <h3 className="text-dark-primary text-xs">NEWSLETTER</h3>
 
       <h2 className="mt-4 text-3xl tablet-portrait:text-4xl tablet-landscape:text-[40px] leading-tight">
         از جدید ترین فرصت ها با خبر شوید
       </h2>
 
-      <p className="text-[#D0C5AF] leading-8 tablet-landscape:leading-[2em] py-8 tablet-landscape:py-10">
+      <p className="text-dark-text-muted leading-8 tablet-landscape:leading-[2em] py-8 tablet-landscape:py-10">
         با عضویت در خبرنامه ملکینو، جدیدترین فایل‌های فروش فوری، فرصت‌های
         سرمایه‌گذاری و پروژه‌های در حال ساخت مناطق تهران را پیش از دیگران دریافت
         کنید.
@@ -22,7 +22,7 @@ function NewsLetterInformation() {
 
         <button
           type="submit"
-          className="bg-[#F2CA50] text-black px-5 h-11 rounded-lg text-sm transition-all duration-300 cursor-pointer"
+          className="bg-dark-primary text-black px-5 h-11 rounded-lg text-sm transition-all duration-300 cursor-pointer"
         >
           ثبت نام
         </button>

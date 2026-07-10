@@ -33,7 +33,7 @@ function Chart({ active }) {
   const data = fullData.slice(-monthsMap[active]);
 
   return (
-    <div className="w-full aspect-[1.6] rounded-2xl bg-[#1B1B1B] mt-20 h-100">
+    <div className="w-full aspect-[1.6] rounded-2xl bg-dark-card mt-20 h-100">
       <ResponsiveContainer width="100%" height="100%">
         <BarChart data={data} margin={{ top: 20, right: 10, left: -10 }}>
           <CartesianGrid stroke="rgba(255,255,255,0.04)" vertical={false} />
@@ -68,8 +68,8 @@ function Chart({ active }) {
                   : `${value} میلیون تومان`;
 
               return (
-                <div className="rounded-xl border border-[#F2CA50]/20 bg-[#1C1B1B] px-4 py-2 text-sm text-white shadow-lg">
-                  <div className="text-[#F2CA50] mb-1">{label}</div>
+                <div className="rounded-xl border border-dark-primary/20 bg-dark-card-hover px-4 py-2 text-sm text-white shadow-lg">
+                  <div className="text-dark-primary mb-1">{label}</div>
                   <div>{formatted}</div>
                 </div>
               );

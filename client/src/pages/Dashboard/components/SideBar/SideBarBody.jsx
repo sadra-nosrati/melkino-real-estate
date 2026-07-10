@@ -10,8 +10,9 @@ function SideBarBody({ onNavigate }) {
     clsx(
       "group flex items-center outline-none focus:outline-none focus-visible:outline-none select-none border-transparent justify-between rounded-xl px-4 py-3 transition-all duration-300",
       {
-        "border border-[#F2CA50]/20 bg-[#F2CA50]/10 text-[#F2CA50]": isActive,
-        "text-zinc-400 hover:bg-white/5 hover:text-[#F2CA50]": !isActive,
+        "border border-dark-primary/20 bg-dark-primary/10 text-dark-primary":
+          isActive,
+        "text-zinc-400 hover:bg-white/5 hover:text-dark-primary": !isActive,
       },
     );
 

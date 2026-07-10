@@ -25,7 +25,7 @@ function MobileSidebar({ open, setOpen }) {
       />
 
       <aside
-        className={`relative right-0 top-0 z-10 flex h-full w-72 flex-col border-l border-[#F2CA50]/10 bg-[#0E0E0E] p-6 shadow-2xl transition-transform duration-300 ease-out ${
+        className={`relative right-0 top-0 z-10 flex h-full w-72 flex-col border-l border-dark-primary/10 bg-dark-background p-6 shadow-2xl transition-transform duration-300 ease-out ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >

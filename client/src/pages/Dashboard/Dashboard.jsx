@@ -24,7 +24,7 @@ function Dashboard() {
 
       <Support />
 
-      <section className="p-4 tablet-portrait:p-6 laptop:p-10 bg-[#201F1F]/60 rounded-2xl mt-10 laptop:mt-30 overflow-x-auto">
+      <section className="p-4 tablet-portrait:p-6 laptop:p-10 bg-dark-muted/60 rounded-2xl mt-10 laptop:mt-30 overflow-x-auto">
         <ChartPage />
       </section>
 

@@ -11,7 +11,7 @@ function RecentViewCart() {
         return (
           <article
             key={item.id}
-            className="w-full h-24 tablet-portrait:h-28 bg-[#201F1F]/60 flex items-center rounded-xl border border-[#F2CA50]/15 px-3 tablet-portrait:px-4 transition-all duration-300 hover:-translate-y-1 hover:border-[#F2CA50]/30 hover:bg-[#201F1F]/80 hover:shadow-[0_10px_30px_rgba(242,202,80,0.06)]"
+            className="w-full h-24 tablet-portrait:h-28 bg-dark-muted/60 flex items-center rounded-xl border border-dark-primary/15 px-3 tablet-portrait:px-4 transition-all duration-300 hover:-translate-y-1 hover:border-dark-primary/30 hover:bg-dark-muted/80 hover:shadow-[0_10px_30px_rgba(242,202,80,0.06)]"
           >
             <div className="flex items-center gap-3 tablet-portrait:gap-5 w-full">
               <img
@@ -25,11 +25,11 @@ function RecentViewCart() {
                   {item.title}
                 </h3>
 
-                <p className="text-[#D0C5AF] text-xs tablet-portrait:text-sm mb-1">
+                <p className="text-dark-text-muted text-xs tablet-portrait:text-sm mb-1">
                   {item.details.area} متر بنا
                 </p>
 
-                <p className="text-[10px] tablet-portrait:text-xs text-[#F2CA50]">
+                <p className="text-[10px] tablet-portrait:text-xs text-dark-primary">
                   {Random} ساعت پیش
                 </p>
               </div>

@@ -62,9 +62,9 @@ export const notify = {
       />,
       {
         ...base,
-        className: `${base.className} !bg-[#13281B] !border !border-[#4ADE80]/10`,
+        className: `${base.className} !bg-dark-success-bg !border !border-dark-success-light/10`,
         progressClassName:
-          "!h-[3px] !bg-gradient-to-r !from-[#16A34A] !via-[#22C55E] !to-[#86EFAC]",
+          "!h-[3px] !bg-gradient-to-r !from-dark-success-hover !via-dark-success !to-dark-success-soft",
       },
     ),
 
@@ -82,9 +82,9 @@ export const notify = {
       />,
       {
         ...base,
-        className: `${base.className} !bg-[#2A1414] !border !border-[#E16B6B]/10`,
+        className: `${base.className} !bg-dark-danger-bg !border !border-dark-danger/10`,
         progressClassName:
-          "!h-[3px] !bg-gradient-to-r !from-[#A54242] !via-[#D95C5C] !to-[#F18C8C]",
+          "!h-[3px] !bg-gradient-to-r !from-dark-danger-dark !via-dark-danger-hover !to-dark-danger-light",
       },
     ),
 };

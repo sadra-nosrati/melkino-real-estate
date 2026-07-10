@@ -43,19 +43,19 @@ function ProductDetails() {
 
   return (
     <div className="w-full tablet-landscape:w-[70%]">
-      <div className="grid grid-cols-2 mobile-landscape:grid-cols-3 gap-4 tablet-landscape:flex tablet-landscape:gap-5 tablet-landscape:items-center tablet-landscape:justify-between py-5 border-t-2 border-b-2 border-[#4D4635]">
+      <div className="grid grid-cols-2 mobile-landscape:grid-cols-3 gap-4 tablet-landscape:flex tablet-landscape:gap-5 tablet-landscape:items-center tablet-landscape:justify-between py-5 border-t-2 border-b-2 border-dark-border-strong">
         {features.map((item) => {
           const Icon = item.icon;
 
           return (
             <div
               key={item.key}
-              className="flex items-center justify-center gap-2 rounded-xl border border-[#4D4635] py-4 tablet-landscape:flex-1 tablet-landscape:border-0 tablet-landscape:border-r-2 tablet-landscape:rounded-none tablet-landscape:py-0 tablet-landscape:first:border-r-0"
+              className="flex items-center justify-center gap-2 rounded-xl border border-dark-border-strong py-4 tablet-landscape:flex-1 tablet-landscape:border-0 tablet-landscape:border-r-2 tablet-landscape:rounded-none tablet-landscape:py-0 tablet-landscape:first:border-r-0"
             >
-              <Icon className="text-[#F2CA50] text-xl tablet-landscape:text-2xl" />
+              <Icon className="text-dark-primary text-xl tablet-landscape:text-2xl" />
 
               <div>
-                <span className="text-xs tablet-landscape:text-sm text-[#D0C5AF]">
+                <span className="text-xs tablet-landscape:text-sm text-dark-text-muted">
                   {item.label}
                 </span>
 

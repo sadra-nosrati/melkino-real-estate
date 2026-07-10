@@ -10,25 +10,25 @@ function HeaderAction({ isOpen, setIsOpen }) {
   return (
     <>
       <div className="hidden laptop:flex items-center gap-3">
-        <FiMoon className="w-6 h-6 text-[#D0C5AF] cursor-pointer hover:text-[#F2CA50] transition-colors duration-300" />
+        <FiMoon className="w-6 h-6 text-dark-text-muted cursor-pointer hover:text-dark-primary transition-colors duration-300" />
 
         {!user ? (
           <Link
             to="/auth/login"
-            className="bg-[#F2CA50] px-5 py-1.5 rounded text-[#131313] hover:bg-[#e0b83f] transition-colors duration-300"
+            className="bg-dark-primary px-5 py-1.5 rounded text-background-secondary hover:bg-dark-accent transition-colors duration-300"
           >
             ورود
           </Link>
         ) : (
           <Link to="/dashboard">
-            <FaRegUser className="w-5.5 h-5.5 text-[#D0C5AF] hover:text-[#F2CA50] transition-colors duration-300" />
+            <FaRegUser className="w-5.5 h-5.5 text-dark-text-muted hover:text-dark-primary transition-colors duration-300" />
           </Link>
         )}
       </div>
 
       <button
         onClick={() => setIsOpen((prev) => !prev)}
-        className="flex laptop:hidden items-center justify-center w-11 h-11 rounded-xl text-[#D0C5AF] hover:text-[#F2CA50] active:scale-95 transition-all duration-300"
+        className="flex laptop:hidden items-center justify-center w-11 h-11 rounded-xl text-dark-text-muted hover:text-dark-primary active:scale-95 transition-all duration-300"
       >
         {isOpen ? (
           <FaXmark className="w-6 h-6" />

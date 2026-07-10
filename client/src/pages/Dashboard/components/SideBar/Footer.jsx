@@ -7,10 +7,10 @@ function Footer() {
   const { user } = useContext(AuthContext);
 
   return (
-    <div className="border-t border-[#4D4635]/20 pt-6">
+    <div className="border-t border-dark-border-strong/20 pt-6">
       <div className="flex items-center gap-3">
-        <div className="flex h-11 w-11 items-center justify-center rounded-full border border-[#F2CA50]/30 bg-[#F2CA50]/10">
-          <LuUser className="text-[#F2CA50]" />
+        <div className="flex h-11 w-11 items-center justify-center rounded-full border border-dark-primary/30 bg-dark-primary/10">
+          <LuUser className="text-dark-primary" />
         </div>
 
         <div>

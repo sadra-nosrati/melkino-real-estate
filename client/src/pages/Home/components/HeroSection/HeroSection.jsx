@@ -11,7 +11,7 @@ function HeroSection() {
       />
 
       <div className="absolute inset-0 flex flex-col items-center justify-center px-5 text-center">
-        <p className="text-[11px] mobile:text-xs text-[#F2CA50] tracking-[0.2em]">
+        <p className="text-[11px] mobile:text-xs text-dark-primary tracking-[0.2em]">
           PRESTIGE & ELEGANCE
         </p>
 
@@ -27,11 +27,11 @@ function HeroSection() {
         </p>
 
         <div className="mt-7 flex flex-col mobile:flex-row items-center gap-3 w-full mobile:w-auto">
-          <button className="w-full mobile:w-auto px-5 py-2 border border-[#F2CA50] text-[#F2CA50] cursor-pointer hover:bg-[#F2CA50]/10 transition rounded">
+          <button className="w-full mobile:w-auto px-5 py-2 border border-dark-primary text-dark-primary cursor-pointer hover:bg-dark-primary/10 transition rounded">
             مشاوره تخصصی
           </button>
 
-          <button className="w-full mobile:w-auto px-5 py-2 bg-[#F2CA50] text-[#3C2F00] cursor-pointer hover:bg-[#e0b83f] transition rounded">
+          <button className="w-full mobile:w-auto px-5 py-2 bg-dark-primary text-dark-accent-dark cursor-pointer hover:bg-dark-accent transition rounded">
             جستجوی املاک
           </button>
         </div>

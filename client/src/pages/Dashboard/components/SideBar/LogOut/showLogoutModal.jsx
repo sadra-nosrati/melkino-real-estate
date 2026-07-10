@@ -22,7 +22,8 @@ export const showLogoutModal = (onConfirm) => {
     color: "#fff",
     customClass: {
       popup: "!rounded-2xl !p-6",
-      confirmButton: "!bg-[#F2CA50] !text-[#131313] !rounded-xl !px-6",
+      confirmButton:
+        "!bg-dark-primary !text-background-secondary !rounded-xl !px-6",
       cancelButton: "!bg-white/5 !text-white/60 !rounded-xl !px-6",
     },
     didOpen: () => {
@@ -32,7 +33,7 @@ export const showLogoutModal = (onConfirm) => {
         const root = createRoot(iconContainer);
 
         root.render(
-          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[#F2CA50]/10 text-[#F2CA50]">
+          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-dark-primary/10 text-dark-primary">
             <MdOutlineLogout className="text-xl" />
           </div>,
         );

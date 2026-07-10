@@ -13,7 +13,7 @@ function RememberMe() {
     <label className="flex items-center gap-2 text-sm text-zinc-400 cursor-pointer">
       <input
         type="checkbox"
-        className="size-4 accent-[#F2CA50]"
+        className="size-4 accent-dark-primary"
         checked={checked}
         onChange={handleChange}
       />

@@ -10,8 +10,6 @@
 
 /* Breakpoints */
 @theme {
-  --breakpoint-*: initial;
-
   --breakpoint-mobile-small: 375px;
   --breakpoint-mobile: 480px;
   --breakpoint-mobile-landscape: 640px;
@@ -20,16 +18,50 @@
   --breakpoint-laptop: 1280px;
 }
 
-/* Dark mode variant */
-@custom-variant dark (&:where(.dark, .dark *));
-
-/* Colors */
 @theme {
-  --color-bg-dark: #131313;
-  --color-text-dark: #e5e2e1;
+  /* Dark Primary */
+  --color-dark-primary: #f2ca50;
+  --color-dark-primary-hover: #e5bd45;
+  --color-dark-primary-active: #d4af37;
 
-  --color-bg-light: #ffffff;
-  --color-text-light: #111111;
+  /* Dark Background */
+  --color-dark-background: #0e0e0e;
+  --color-dark-background-secondary: #131313;
+  --color-dark-card: #1b1b1b;
+  --color-dark-card-hover: #1c1b1b;
+  --color-dark-muted: #201f1f;
+
+  /* Dark Border */
+  --color-dark-border: #2a2a2a;
+  --color-dark-border-light: #353534;
+  --color-dark-border-strong: #4d4635;
+
+  /* Dark Text */
+  --color-dark-text-secondary: #e5e2e1;
+  --color-dark-text-muted: #d0c5af;
+
+  /* Dark Gold */
+  --color-dark-accent: #e0b83f;
+  --color-dark-accent-dark: #3c2f00;
+
+  /* Dark Success */
+  --color-dark-success: #22c55e;
+  --color-dark-success-hover: #16a34a;
+  --color-dark-success-light: #4ade80;
+  --color-dark-success-soft: #86efac;
+  --color-dark-success-bg: #13281b;
+
+  /* Dark Danger */
+  --color-dark-danger: #e16b6b;
+  --color-dark-danger-hover: #d95c5c;
+  --color-dark-danger-dark: #a54242;
+  --color-dark-danger-light: #f18c8c;
+  --color-dark-danger-soft: #e8a3a3;
+  --color-dark-danger-bright: #f87171;
+  --color-dark-danger-bg: #2a1414;
+
+  /* Misc */
+  --color-dark-panel: #2a2416;
 }
 
 /* DEFAULT = DARK */
@@ -38,13 +70,8 @@
     direction: rtl;
     font-family: "YekanBakh-SemiBold", sans-serif;
 
-    background-color: var(--color-bg-dark);
-    color: var(--color-text-dark);
-  }
-
-  html.light {
-    background-color: var(--color-bg-light);
-    color: var(--color-text-light);
+    background-color: var(--color-dark-background-secondary);
+    color: var(--color-dark-text-secondary);
   }
 }
 

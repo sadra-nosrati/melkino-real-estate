@@ -5,7 +5,7 @@ function HeaderBrand() {
     <Link
       to="/"
       className="
-        text-[#F2CA50] text-3xl tablet-portrait:text-4xl font-semibold tracking-wide select-none"
+        text-dark-primary text-3xl tablet-portrait:text-4xl font-semibold tracking-wide select-none"
     >
       Melkino
     </Link>

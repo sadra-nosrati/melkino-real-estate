@@ -14,7 +14,7 @@ function SimilarProduct() {
 
         <Link
           to="/dashboard/favorites"
-          className="text-[#F2CA50] hover:text-[#e0b83f] transition cursor-pointer"
+          className="text-dark-primary hover:text-dark-accent transition cursor-pointer"
         >
           مشاهده همه
         </Link>

@@ -9,7 +9,7 @@ function Footer() {
           <span>هنوز عضو نشدید؟</span>
           <Link
             to="/auth/register"
-            className="text-[#F2CA50] font-medium hover:opacity-80 transition"
+            className="text-dark-primary font-medium hover:opacity-80 transition"
           >
             ساخت حساب
           </Link>
@@ -19,7 +19,7 @@ function Footer() {
           <span>قبلاً عضو شدید؟</span>
           <Link
             to="/auth/login"
-            className="text-[#F2CA50] font-medium hover:opacity-80 transition"
+            className="text-dark-primary font-medium hover:opacity-80 transition"
           >
             ورود
           </Link>

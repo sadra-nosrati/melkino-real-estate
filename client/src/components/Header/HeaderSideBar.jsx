@@ -13,7 +13,7 @@ function HeaderSideBar({ isOpen, setIsOpen }) {
   };
 
   const itemClass =
-    "flex gap-2 items-center px-4 py-3 rounded-xl text-[#D0C5AF] hover:bg-[#F2CA50]/10 hover:text-[#F2CA50] transition-all duration-300";
+    "flex gap-2 items-center px-4 py-3 rounded-xl text-dark-text-muted hover:bg-dark-primary/10 hover:text-dark-primary transition-all duration-300";
 
   return (
     <>
@@ -30,15 +30,15 @@ function HeaderSideBar({ isOpen, setIsOpen }) {
 
       <aside
         className={clsx(
-          "fixed top-0 right-0 z-9999 h-screen w-75 bg-[#131313] border-l border-[#F2CA50]/10 shadow-2xl transition-all duration-300 ease-in-out",
+          "fixed top-0 right-0 z-9999 h-screen w-75 bg-background-secondary border-l border-dark-primary/10 shadow-2xl transition-all duration-300 ease-in-out",
           { "translate-x-0": isOpen, "translate-x-full": !isOpen },
         )}
       >
-        <div className="flex items-center justify-between h-20 px-6 border-b border-[#F2CA50]/10">
+        <div className="flex items-center justify-between h-20 px-6 border-b border-dark-primary/10">
           <Link
             to="/"
             onClick={closeSidebar}
-            className="text-3xl tracking-[0.2em] mx-auto font-bold text-[#F2CA50]"
+            className="text-3xl tracking-[0.2em] mx-auto font-bold text-dark-primary"
           >
             Melkino
           </Link>
@@ -59,13 +59,13 @@ function HeaderSideBar({ isOpen, setIsOpen }) {
             </Link>
           </div>
 
-          <div className="my-4 h-px bg-[#F2CA50]/10 tablet-portrait:hidden" />
+          <div className="my-4 h-px bg-dark-primary/10 tablet-portrait:hidden" />
 
           {!user ? (
             <Link
               to="/auth/login"
               onClick={closeSidebar}
-              className="mt-4 flex items-center justify-center rounded-xl bg-[#F2CA50] py-3 font-medium text-[#131313] hover:bg-[#e5bd45] active:scale-95 transition-all duration-300"
+              className="mt-4 flex items-center justify-center rounded-xl bg-dark-primary py-3 font-medium text-background-secondary hover:bg-dark-primary-hover active:scale-95 transition-all duration-300"
             >
               ورود به حساب
             </Link>

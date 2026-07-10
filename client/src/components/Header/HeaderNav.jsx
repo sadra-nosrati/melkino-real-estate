@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 function HeaderNav() {
   const hoverClass =
-    "text-[#D0C5AF] hover:text-[#F2CA50] active:text-[#F2CA50] transition-colors duration-300";
+    "text-dark-text-muted hover:text-dark-primary active:text-dark-primary transition-colors duration-300";
 
   return (
     <nav className="hidden tablet-portrait:block">

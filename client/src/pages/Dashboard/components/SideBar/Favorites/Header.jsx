@@ -1,7 +1,7 @@
 function Header() {
   return (
     <div className="mb-8">
-      <h1 className="text-4xl tablet-portrait:text-2xl laptop:text-3xl font-light text-[#F2CA50]">
+      <h1 className="text-4xl tablet-portrait:text-2xl laptop:text-3xl font-light text-dark-primary">
         علاقه‌ مندی‌ ها
       </h1>
 

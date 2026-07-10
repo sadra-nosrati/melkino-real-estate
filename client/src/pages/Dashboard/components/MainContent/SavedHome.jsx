@@ -21,7 +21,7 @@ function SavedHome() {
 
         <Link
           to="/dashboard/favorites"
-          className="text-sm tablet-portrait:text-base text-zinc-200 hover:text-[#F2CA50] transition-colors"
+          className="text-sm tablet-portrait:text-base text-zinc-200 hover:text-dark-primary transition-colors"
         >
           مشاهده همه
         </Link>

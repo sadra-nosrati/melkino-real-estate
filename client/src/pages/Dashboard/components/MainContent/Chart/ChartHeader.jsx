@@ -1,18 +1,18 @@
 function ChartHeader({ active, setActive }) {
   const ButtonStyle =
-    "bg-[#353534] px-3 py-1 rounded-2xl cursor-pointer hover:bg-[#F2CA50] hover:text-[#131313] transition-colors";
+    "bg-dark-border-light px-3 py-1 rounded-2xl cursor-pointer hover:bg-dark-primary hover:text-dark-background-secondary transition-colors";
 
   const ActiveStyle =
-    "bg-[#F2CA50] text-[#131313] px-3 py-1 rounded-2xl cursor-pointer";
+    "bg-dark-primary text-dark-background-secondary px-3 py-1 rounded-2xl cursor-pointer";
 
   return (
     <div className="flex flex-col gap-4 tablet-portrait:flex-row tablet-portrait:items-center tablet-portrait:justify-between">
       <div className="flex flex-col">
-        <h1 className="text-[#E5E2E1] text-lg tablet-portrait:text-2xl">
+        <h1 className="text-dark-text-secondary text-lg tablet-portrait:text-2xl">
           روند تغییرات ملک در تهران
         </h1>
 
-        <p className="text-[#D0C5AF] text-xs tablet-portrait:text-sm mt-2 tablet-portrait:mt-3">
+        <p className="text-dark-text-muted text-xs tablet-portrait:text-sm mt-2 tablet-portrait:mt-3">
           مقایسه {active} ماه اخیر نسبت به شاخص تورم
         </p>
       </div>

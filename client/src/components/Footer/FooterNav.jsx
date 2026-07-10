@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 
 function FooterNav() {
-  const liStyle = "transition-colors duration-300 hover:text-[#F2CA50]";
+  const liStyle = "transition-colors duration-300 hover:text-dark-primary";
 
   return (
     <nav>

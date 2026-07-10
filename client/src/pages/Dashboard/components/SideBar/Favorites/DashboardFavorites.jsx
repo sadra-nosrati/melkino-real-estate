@@ -9,7 +9,7 @@ function DashboardFavorites() {
   const favoriteProperties = useFavoriteDashboard();
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#131313]">
+    <div className="min-h-screen flex flex-col bg-background-secondary">
       <div className="flex-1 px-4 mobile:px-6 tablet-portrait:px-10 laptop:px-16 py-10">
         <Header />
 
