@@ -10,7 +10,7 @@ const base = {
   draggablePercent: 30,
 
   className:
-    "!w-[calc(100vw-32px)] mobile-small:!mx-auto mobile:!mx-auto tablet-portrait:!mx-0 mobile:!w-[calc(100vw-32px)] tablet-portrait:!w-[360px] !max-w-[360px] !rounded-[18px] !overflow-hidden !p-0 !shadow-[0_20px_60px_rgba(0,0,0,.45)] backdrop-blur-xl",
+    "!mt-3 mobile-small:!mt-5 mobile:!mt-5 tablet-portrait:!mt-0 !w-[calc(100vw-32px)] mobile-small:!mx-auto mobile:!mx-auto tablet-portrait:!mx-0 mobile:!w-[calc(100vw-32px)] tablet-portrait:!w-[360px] !max-w-[360px] !rounded-[18px] !overflow-hidden !p-0 !shadow-[0_20px_60px_rgba(0,0,0,.45)] backdrop-blur-xl",
 
   bodyClassName: "!m-0 !p-0",
 };
