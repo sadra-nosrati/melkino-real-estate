@@ -6,11 +6,12 @@ import TopBar from "./components/TopBar";
 import WhyChooseUs from "./components/WhyChooseUs";
 import ProductCart from "@/components/ProductCard/ProductCart";
 import useDocumentTitle from "@/hooks/useDocumentTitle";
+import ProductCardSkeleton from "@/components/skeleton/ProductCardSkeleton";
 
 function Home() {
   useDocumentTitle("صفحه اصلی");
 
-  const { properties } = useProperties();
+  const { properties, loading } = useProperties();
 
   return (
     <>
@@ -19,9 +20,15 @@ function Home() {
       <div className="border-b-2 border-dark-border-strong min-h-fit py-12 tablet-landscape:h-187.5 tablet-landscape:py-0 flex flex-col items-center justify-center">
         <TopBar />
         <section className="mx-auto w-full max-w-7xl px-4 mt-3 flex flex-wrap gap-5 tablet-landscape:justify-center mobile-landscape:justify-center tablet-portrait:justify-center mobile:justify-center mobile-small:justify-center">
-          {properties.slice(-3).map((property) => (
-            <ProductCart key={property.id} property={property} />
-          ))}
+          {loading
+            ? Array.from({ length: 3 }).map((_, index) => (
+                <ProductCardSkeleton key={index} />
+              ))
+            : properties
+                .slice(-3)
+                .map((property) => (
+                  <ProductCart key={property.id} property={property} />
+                ))}
         </section>
       </div>
 

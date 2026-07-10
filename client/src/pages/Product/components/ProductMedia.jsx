@@ -1,17 +1,22 @@
 import { useState } from "react";
 import { usePropertyById } from "@/hooks/usePropertyById";
+import ProductMediaSkeleton from "@/components/Skeleton/ProductMediaSkeleton";
 
 function ProductMedia() {
-  const { property } = usePropertyById();
+  const { property, loading } = usePropertyById();
   const [selectedImage, setSelectedImage] = useState(null);
+
+  if (loading) {
+    return <ProductMediaSkeleton />;
+  }
 
   return (
     <>
       <section className="mt-8">
-        <figure className="grid h-auto tablet-landscape:h-[720px] grid-cols-1 tablet-landscape:grid-cols-[2.2fr_1fr] gap-3">
+        <figure className="grid h-auto tablet-landscape:h-180 grid-cols-1 tablet-landscape:grid-cols-[2.2fr_1fr] gap-3">
           <div
             onClick={() => setSelectedImage(property?.img)}
-            className="group cursor-pointer overflow-hidden rounded-xl mobile-landscape:rounded-2xl tablet-landscape:rounded-3xl h-[260px] mobile-landscape:h-[340px] tablet-portrait:h-[450px] tablet-landscape:h-full"
+            className="group cursor-pointer overflow-hidden rounded-xl mobile-landscape:rounded-2xl tablet-landscape:rounded-3xl h-65 mobile-landscape:h-85 tablet-portrait:h-112.5 tablet-landscape:h-full"
           >
             <img
               src={property?.img}
@@ -20,7 +25,7 @@ function ProductMedia() {
             />
           </div>
 
-          <div className="grid grid-cols-3 tablet-landscape:grid-cols-1 grid-rows-1 tablet-landscape:grid-rows-3 gap-3 h-[100px] mobile-landscape:h-[130px] tablet-portrait:h-[170px] tablet-landscape:h-auto">
+          <div className="grid grid-cols-3 tablet-landscape:grid-cols-1 grid-rows-1 tablet-landscape:grid-rows-3 gap-3 h-25 mobile-landscape:h-32.5 tablet-portrait:h-42.5 tablet-landscape:h-auto">
             {property?.gallery?.slice(0, 3).map((image, index) => (
               <div
                 key={index}
@@ -41,7 +46,7 @@ function ProductMedia() {
       {selectedImage && (
         <div
           onClick={() => setSelectedImage(null)}
-          className="fixed inset-0 z-[999] flex items-center justify-center bg-black/85 backdrop-blur-sm transition-all duration-300 p-4"
+          className="fixed inset-0 z-999 flex items-center justify-center bg-black/85 backdrop-blur-sm transition-all duration-300 p-4"
         >
           <div
             onClick={(e) => e.stopPropagation()}

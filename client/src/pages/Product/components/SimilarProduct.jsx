@@ -1,9 +1,10 @@
 import ProductCart from "@/components/ProductCard/ProductCart";
+import ProductCardSkeleton from "@/components/Skeleton/ProductCardSkeleton";
 import { useProperties } from "@/context/PropertiesContext";
 import { Link } from "react-router";
 
 function SimilarProduct() {
-  const { properties, loading, error } = useProperties();
+  const { properties, loading } = useProperties();
 
   return (
     <section className="w-full mt-20">
@@ -21,9 +22,15 @@ function SimilarProduct() {
       </header>
 
       <div className="mx-auto w-full max-w-7xl px-4 mt-3 flex flex-wrap gap-5 tablet-landscape:justify-center mobile-landscape:justify-center tablet-portrait:justify-center mobile:justify-center mobile-small:justify-center">
-        {properties.slice(-3).map((property) => (
-          <ProductCart key={property.id} property={property} />
-        ))}
+        {loading
+          ? Array.from({ length: 3 }).map((_, index) => (
+              <ProductCardSkeleton key={index} />
+            ))
+          : properties
+              .slice(-3)
+              .map((property) => (
+                <ProductCart key={property.id} property={property} />
+              ))}
       </div>
     </section>
   );

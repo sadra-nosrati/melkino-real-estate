@@ -5,11 +5,12 @@ import ProductCart from "@/components/ProductCard/ProductCart";
 import { useFavoriteDashboard } from "@/hooks/useFavoriteDashboard";
 import { AuthContext } from "@/context/AuthContext";
 import Empty from "@/components/Empty";
+import ProductCardSkeleton from "@/components/Skeleton/ProductCardSkeleton";
 
 function SavedHome() {
   const text = "هنوز خانه‌ ای به علاقه‌ مندی‌ های خود اضافه نکرده‌ اید";
 
-  const favoriteProperties = useFavoriteDashboard();
+  const { favoriteProperties, loading } = useFavoriteDashboard();
   const { user } = useContext(AuthContext);
 
   return (
@@ -27,8 +28,14 @@ function SavedHome() {
         </Link>
       </header>
 
-      {user?.favorites?.length ? (
-        <div className="mx-auto w-full max-w-7xl mt-3 grid grid-cols-1 mobile-landscape:grid-cols-2 gap-4 tablet-portrait:gap-5  mobile-small:flex mobile-small:justify-center mobile-small:flex-wrap">
+      {loading ? (
+        <div className="mx-auto w-full max-w-7xl mt-3 grid grid-cols-1 mobile-landscape:grid-cols-2 gap-4 tablet-portrait:gap-5 mobile-small:flex mobile-small:justify-center mobile-small:flex-wrap">
+          {Array.from({ length: 2 }).map((_, index) => (
+            <ProductCardSkeleton key={index} />
+          ))}
+        </div>
+      ) : user?.favorites?.length ? (
+        <div className="mx-auto w-full max-w-7xl mt-3 grid grid-cols-1 mobile-landscape:grid-cols-2 gap-4 tablet-portrait:gap-5 mobile-small:flex mobile-small:justify-center mobile-small:flex-wrap">
           {favoriteProperties.slice(0, 2).map((property) => (
             <ProductCart key={property.id} property={property} />
           ))}

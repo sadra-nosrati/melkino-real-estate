@@ -14,7 +14,7 @@ function HeaderNav() {
         </li>
 
         <li>
-          <Link to="/" className={hoverClass}>
+          <Link to="/dashboard/favorites" className={hoverClass}>
             املاک برتر
           </Link>
         </li>

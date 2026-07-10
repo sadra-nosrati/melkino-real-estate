@@ -1,4 +1,4 @@
-import { createBrowserRouter, ScrollRestoration } from "react-router";
+import { createBrowserRouter } from "react-router";
 
 import Home from "@/pages/Home/Home";
 import Product from "@/pages/Product/Product";
@@ -10,6 +10,7 @@ import DashboardLayout from "@/layouts/DashboardLayout";
 import ProtectedRoute from "./pages/Dashboard/ProtectedRoute";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import DashboardFavorites from "./pages/Dashboard/components/SideBar/Favorites/DashboardFavorites";
+import NotFound from "./pages/404/NotFound";
 
 export const router = createBrowserRouter([
   {
@@ -38,5 +39,10 @@ export const router = createBrowserRouter([
       { index: true, element: <Dashboard /> },
       { path: "favorites", element: <DashboardFavorites /> },
     ],
+  },
+
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ]);
