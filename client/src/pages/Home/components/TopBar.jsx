@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 function TopBar() {
   return (
-    <div className="flex items-center justify-between mx-auto w-full max-w-7xl px-4 mobile-small:flex-col mobile-small:items-start">
+    <div className="flex flex-col items-start justify-between mx-auto w-full max-w-7xl px-4 mobile-small:flex-row mobile-small:items-center">
       <div className="flex flex-col gap-4">
         <h2 className="text-4xl text-dark-primary">بهترین ملک ها</h2>
         <p
