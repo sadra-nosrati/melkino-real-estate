@@ -6,7 +6,7 @@ import TopBar from "./components/TopBar";
 import WhyChooseUs from "./components/WhyChooseUs";
 import ProductCart from "@/components/ProductCard/ProductCart";
 import useDocumentTitle from "@/hooks/useDocumentTitle";
-import ProductCardSkeleton from "@/components/skeleton/ProductCardSkeleton";
+import ProductCardSkeleton from "@/components/Skeleton/ProductCardSkeleton";
 
 function Home() {
   useDocumentTitle("صفحه اصلی");
