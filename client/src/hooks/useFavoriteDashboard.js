@@ -12,7 +12,7 @@ export function useFavoriteDashboard() {
       try {
         setLoading(true);
 
-        const res = await fetch("http://localhost:5000/properties");
+        const res = await fetch("/api/properties");
 
         const data = await res.json();
 

@@ -3,7 +3,7 @@ import { AuthContext } from "./AuthContext";
 
 export const FavoritesContext = createContext();
 
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "/api";
 
 export function FavoritesProvider({ children }) {
   const [favorites, setFavorites] = useState([]);

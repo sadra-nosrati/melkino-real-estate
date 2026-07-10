@@ -67,51 +67,5 @@
       }
     }
   ],
-  "users": [
-    {
-      "id": "1781607186572",
-      "fullName": "Testt",
-      "email": "test@gmail.com",
-      "password": "Test123",
-      "favorites": [
-        "3",
-        "2"
-      ],
-      "token": "01d8c7a47e5bba1102523e2e3b1ea0f154d5212196fce31069e4ff6f6c68ae37",
-      "createdAt": "2026-06-16T10:53:06.572Z"
-    },
-    {
-      "id": "1781617306918",
-      "fullName": "Sadra",
-      "email": "Sadranosrati2222@gmail.com",
-      "password": "Sadra123",
-      "favorites": [
-        "3",
-        "2"
-      ],
-      "token": "573e7d4116094639c6d768eb5275eb6b1838edf900e688f75206b87b7f108e55",
-      "createdAt": "2026-06-16T13:41:46.918Z"
-    },
-    {
-      "id": "1783186812140",
-      "fullName": "Sadra",
-      "email": "Sadranosrati3333@gmail.com",
-      "password": "Sadra123",
-      "favorites": [],
-      "token": null,
-      "createdAt": "2026-07-04T17:40:12.140Z"
-    },
-    {
-      "id": "1783320984287",
-      "fullName": "Sad",
-      "email": "Sadranosrati7777@gmail.com",
-      "password": "Sadra1234",
-      "favorites": [
-        "2",
-        "1"
-      ],
-      "token": null,
-      "createdAt": "2026-07-06T06:56:24.287Z"
-    }
-  ]
+  "users": []
 }

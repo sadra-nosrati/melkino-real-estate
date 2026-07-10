@@ -15,7 +15,7 @@ export function PropertiesProvider({ children }) {
         setLoading(true);
         setError(null);
 
-        const res = await fetch("http://localhost:5000/properties", {
+        const res = await fetch("/api/properties", {
           signal: controller.signal,
         });
 
