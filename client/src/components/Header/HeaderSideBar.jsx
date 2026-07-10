@@ -50,11 +50,15 @@ function HeaderSideBar({ isOpen, setIsOpen }) {
               خانه
             </Link>
 
-            <Link to="/properties" onClick={closeSidebar} className={itemClass}>
+            <Link
+              to="/dashboard/favorites"
+              onClick={closeSidebar}
+              className={itemClass}
+            >
               املاک برتر
             </Link>
 
-            <Link to="/contact" onClick={closeSidebar} className={itemClass}>
+            <Link to="/" onClick={closeSidebar} className={itemClass}>
               تماس با ما
             </Link>
           </div>
