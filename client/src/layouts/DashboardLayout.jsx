@@ -13,7 +13,7 @@ function DashboardLayout() {
     <>
       <ScrollRestoration />
 
-      <div className="flex w-full min-h-screen bg-background-secondary">
+      <div className="flex w-full min-h-screen bg-dark-background-secondary">
         <div className="hidden laptop:flex">
           <SideBar />
         </div>

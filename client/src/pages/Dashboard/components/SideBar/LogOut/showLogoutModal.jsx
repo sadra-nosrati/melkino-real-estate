@@ -23,7 +23,7 @@ export const showLogoutModal = (onConfirm) => {
     customClass: {
       popup: "!rounded-2xl !p-6",
       confirmButton:
-        "!bg-dark-primary !text-background-secondary !rounded-xl !px-6",
+        "!bg-dark-primary !text-dark-dark-background-secondary !rounded-xl !px-6",
       cancelButton: "!bg-white/5 !text-white/60 !rounded-xl !px-6",
     },
     didOpen: () => {

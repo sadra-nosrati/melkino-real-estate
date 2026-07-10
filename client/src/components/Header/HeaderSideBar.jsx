@@ -30,7 +30,7 @@ function HeaderSideBar({ isOpen, setIsOpen }) {
 
       <aside
         className={clsx(
-          "fixed top-0 right-0 z-9999 h-screen w-75 bg-background-secondary border-l border-dark-primary/10 shadow-2xl transition-all duration-300 ease-in-out",
+          "fixed top-0 right-0 z-9999 h-screen w-75 bg-dark-background-secondary border-l border-dark-primary/10 shadow-2xl transition-all duration-300 ease-in-out",
           { "translate-x-0": isOpen, "translate-x-full": !isOpen },
         )}
       >
@@ -65,7 +65,7 @@ function HeaderSideBar({ isOpen, setIsOpen }) {
             <Link
               to="/auth/login"
               onClick={closeSidebar}
-              className="mt-4 flex items-center justify-center rounded-xl bg-dark-primary py-3 font-medium text-background-secondary hover:bg-dark-primary-hover active:scale-95 transition-all duration-300"
+              className="mt-4 flex items-center justify-center rounded-xl bg-dark-primary py-3 font-medium text-dark-background-secondary hover:bg-dark-primary-hover active:scale-95 transition-all duration-300"
             >
               ورود به حساب
             </Link>

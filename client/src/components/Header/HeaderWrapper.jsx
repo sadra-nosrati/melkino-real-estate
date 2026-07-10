@@ -7,7 +7,7 @@ function HeaderWrapper({ isScrolled, children }) {
         "fixed w-full z-50 transition-[top,background-color] duration-500 ease-out border-0",
         {
           "top-3 tablet-portrait:top-4 laptop:top-6 border-b-0": isScrolled,
-          "top-0 border-b-2 bg-dark-background-secondary border-dark-primary-active/20":
+          "top-0 border-b-2 bg-dark-dark-background-secondary border-dark-primary-active/20":
             !isScrolled,
         },
       )}
@@ -15,7 +15,7 @@ function HeaderWrapper({ isScrolled, children }) {
       <div
         className={clsx("w-full transition-all duration-500 ease-out", {
           "bg-transparent": isScrolled,
-          "bg-background-secondary": !isScrolled,
+          "bg-dark-background-secondary": !isScrolled,
         })}
       >
         {children}

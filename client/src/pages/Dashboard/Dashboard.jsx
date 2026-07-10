@@ -5,8 +5,11 @@ import Support from "./components/MainContent/Support";
 import RecentViews from "./components/MainContent/RecentView/RecentViews";
 import ChartPage from "./components/MainContent/Chart/ChartPage";
 import Footer from "./components/DashboardFooter";
+import useDocumentTitle from "@/hooks/useDocumentTitle";
 
 function Dashboard() {
+  useDocumentTitle("داشبورد");
+
   return (
     <section className="space-y-8 p-4 tablet-portrait:p-6 laptop:p-8 w-full mx-auto">
       <header>

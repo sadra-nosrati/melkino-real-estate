@@ -5,9 +5,13 @@ import NewsLetter from "./components/NewsLetter/NewsLetter";
 import TopBar from "./components/TopBar";
 import WhyChooseUs from "./components/WhyChooseUs";
 import ProductCart from "@/components/ProductCard/ProductCart";
+import useDocumentTitle from "@/hooks/useDocumentTitle";
 
 function Home() {
+  useDocumentTitle("صفحه اصلی");
+
   const { properties, loading, error } = useProperties();
+
   return (
     <>
       <HeroSection />

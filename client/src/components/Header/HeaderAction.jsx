@@ -15,7 +15,7 @@ function HeaderAction({ isOpen, setIsOpen }) {
         {!user ? (
           <Link
             to="/auth/login"
-            className="bg-dark-primary px-5 py-1.5 rounded text-background-secondary hover:bg-dark-accent transition-colors duration-300"
+            className="bg-dark-primary px-5 py-1.5 rounded text-dark-background-secondary hover:bg-dark-accent transition-colors duration-300"
           >
             ورود
           </Link>

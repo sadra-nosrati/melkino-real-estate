@@ -3,8 +3,11 @@ import { Link, useParams } from "react-router";
 import TopBar from "./components/TopBar";
 import Form from "./components/Form/Form";
 import Footer from "./components/Footer";
+import useDocumentTitle from "@/hooks/useDocumentTitle";
 
 function AuthPage() {
+  useDocumentTitle("ورود و ثبت‌ نام");
+
   const { mode } = useParams();
 
   const isLogin = mode === "login";
@@ -18,7 +21,7 @@ function AuthPage() {
         MELKINO
       </Link>
 
-      <section className="relative w-full max-w-md rounded-2xl tablet-landscape:rounded-3xl bg-background-secondary/40 p-5 mobile-landscape:p-6 tablet-landscape:p-8 backdrop-blur-xl border border-dark-primary/15">
+      <section className="relative w-full max-w-md rounded-2xl tablet-landscape:rounded-3xl bg-dark-background-secondary/40 p-5 mobile-landscape:p-6 tablet-landscape:p-8 backdrop-blur-xl border border-dark-primary/15">
         <TopBar mode={isLogin ? "login" : "register"} />
 
         <Form mode={isLogin ? "login" : "register"} />

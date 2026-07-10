@@ -10,7 +10,7 @@ function ProductMap() {
         </h2>
       </div>
 
-      <div className="group overflow-hidden rounded-2xl border border-dark-panel bg-background-secondary p-2 tablet-landscape:p-3 transition-all duration-500 hover:-translate-y-1 hover:border-dark-primary/50 hover:shadow-[0_20px_50px_rgba(242,202,80,0.12)]">
+      <div className="group overflow-hidden rounded-2xl border border-dark-panel bg-dark-background-secondary p-2 tablet-landscape:p-3 transition-all duration-500 hover:-translate-y-1 hover:border-dark-primary/50 hover:shadow-[0_20px_50px_rgba(242,202,80,0.12)]">
         <div className="overflow-hidden rounded-xl">
           <img
             src="/images/31.png"

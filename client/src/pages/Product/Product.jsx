@@ -5,11 +5,12 @@ import ProductMap from "./components/ProductMap";
 import ProductMedia from "./components/ProductMedia";
 import { usePropertyById } from "@/hooks/usePropertyById";
 import SimilarProduct from "./components/SimilarProduct";
+import useDocumentTitle from "@/hooks/useDocumentTitle";
 
 function Product() {
-  const { property, loading, error } = usePropertyById();
+  const { property } = usePropertyById();
 
-  console.log(property);
+  useDocumentTitle(property?.title);
 
   return (
     <div className="mx-auto flex max-w-7xl flex-col p-4 mt-20">
