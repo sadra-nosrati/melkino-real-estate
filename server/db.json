@@ -67,5 +67,17 @@
       }
     }
   ],
-  "users": []
+  "users": [
+    {
+      "id": "1783707883728",
+      "fullName": "Sadra",
+      "email": "Sadranosrati2222@gmail.com",
+      "password": "Sadra123",
+      "favorites": [
+        "1"
+      ],
+      "token": "aed6bd421dea88a86d433aaec358b2f770dc8592e8c189208f2a41bb39bfcb0f",
+      "createdAt": "2026-07-10T18:24:43.728Z"
+    }
+  ]
 }

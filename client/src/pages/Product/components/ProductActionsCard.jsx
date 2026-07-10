@@ -1,3 +1,4 @@
+import { AuthContext } from "@/context/AuthContext";
 import { FavoritesContext } from "@/context/FavoritesContext";
 import { usePropertyById } from "@/hooks/usePropertyById";
 import { notify } from "@/utils/toast";
@@ -9,6 +10,8 @@ function ProductActionsCard() {
   const { property } = usePropertyById();
   const { favorites, toggleFavorite } = useContext(FavoritesContext);
   const isFavorite = favorites.includes(String(property?.id));
+
+  const { user } = useContext(AuthContext);
 
   return (
     <div className="w-full tablet-landscape:w-[30%]">
@@ -43,6 +46,13 @@ function ProductActionsCard() {
       <div className="mt-4 space-y-3">
         <button
           onClick={() => {
+            if (!user) {
+              notify.error(
+                "ابتدا وارد حساب کاربری خود شوید تا بتوانید این ملک را به علاقه‌ مندی‌ ها اضافه کنید.",
+              );
+              return;
+            }
+
             toggleFavorite(property.id);
             if (isFavorite) {
               notify.success("ملک از علاقه‌مندی‌ها حذف شد.");

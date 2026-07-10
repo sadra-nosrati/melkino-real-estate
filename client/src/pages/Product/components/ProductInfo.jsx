@@ -4,7 +4,7 @@ import { usePropertyById } from "@/hooks/usePropertyById";
 import { formatPrice } from "@/components/ProductCard/FormatPrice";
 
 function ProductInfo() {
-  const { property, loading, error } = usePropertyById();
+  const { property } = usePropertyById();
 
   return (
     <section className="w-full flex flex-col tablet-landscape:flex-row justify-between items-start tablet-landscape:items-center gap-6 tablet-landscape:gap-0 mt-10">
