@@ -1,9 +1,9 @@
 function ChartHeader({ active, setActive }) {
   const ButtonStyle =
-    "bg-dark-border-light px-3 py-1 rounded-2xl cursor-pointer hover:bg-dark-primary hover:text-dark-dark-background-secondary transition-colors";
+    "bg-dark-border-light px-3 py-1 rounded-2xl cursor-pointer hover:bg-dark-primary hover:text-dark-background-secondary transition-colors";
 
   const ActiveStyle =
-    "bg-dark-primary text-dark-dark-background-secondary px-3 py-1 rounded-2xl cursor-pointer";
+    "bg-dark-primary text-dark-background-secondary px-3 py-1 rounded-2xl cursor-pointer";
 
   return (
     <div className="flex flex-col gap-4 tablet-portrait:flex-row tablet-portrait:items-center tablet-portrait:justify-between">

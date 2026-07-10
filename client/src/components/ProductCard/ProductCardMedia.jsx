@@ -17,7 +17,7 @@ function ProductCardMedia({ property }) {
     <div className="relative">
       <div className="absolute top-3 left-3 right-3 z-10 flex items-center justify-between">
         {property?.isVIP === true ? (
-          <span className="bg-dark-primary py-1 px-2 mobile-landscape:px-3 rounded text-dark-dark-background-secondary text-[11px] mobile-landscape:text-xs">
+          <span className="bg-dark-primary py-1 px-2 mobile-landscape:px-3 rounded text-dark-background-secondary text-[11px] mobile-landscape:text-xs">
             ویژه
           </span>
         ) : (

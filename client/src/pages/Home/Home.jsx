@@ -10,7 +10,7 @@ import useDocumentTitle from "@/hooks/useDocumentTitle";
 function Home() {
   useDocumentTitle("صفحه اصلی");
 
-  const { properties, loading, error } = useProperties();
+  const { properties } = useProperties();
 
   return (
     <>

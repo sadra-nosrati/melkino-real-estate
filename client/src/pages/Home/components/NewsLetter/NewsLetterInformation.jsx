@@ -1,4 +1,22 @@
+import { notify } from "@/utils/toast";
+import { useState } from "react";
+
 function NewsLetterInformation() {
+  const [email, setEmail] = useState();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(email)) {
+      notify.error("لطفاً یک ایمیل معتبر وارد کنید.");
+      return;
+    }
+
+    notify.success("ایمیل با موفقیت ثبت شد.");
+  };
+
   return (
     <div className="w-full tablet-landscape:w-1/2 text-center tablet-landscape:text-right">
       <h3 className="text-dark-primary text-xs">NEWSLETTER</h3>
@@ -13,9 +31,14 @@ function NewsLetterInformation() {
         کنید.
       </p>
 
-      <form className="flex flex-col mobile:flex-row items-stretch mobile:items-center gap-3 mobile:gap-0 border border-white/10 rounded-lg p-2 w-full max-w-md mx-auto tablet-landscape:mx-0 transition-all duration-300 hover:border-white/20 hover:shadow-[0_0_20px_rgba(242,202,80,0.08)]">
+      <form
+        onSubmit={handleSubmit}
+        className="flex flex-col mobile:flex-row items-stretch mobile:items-center gap-3 mobile:gap-0 border border-white/10 rounded-lg p-2 w-full max-w-md mx-auto tablet-landscape:mx-0 transition-all duration-300 hover:border-white/20 hover:shadow-[0_0_20px_rgba(242,202,80,0.08)]"
+      >
         <input
           type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           placeholder="آدرس ایمیل شما"
           className="flex-1 bg-transparent outline-none text-white placeholder:text-white/40 px-3 h-11"
         />
