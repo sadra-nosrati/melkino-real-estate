@@ -25,6 +25,8 @@ function App() {
               pauseOnHover
               theme="dark"
               limit={3}
+              rtl
+              toastStyle={{ width: "100%" }}
             />
           </SidebarProvider>
         </PropertiesProvider>

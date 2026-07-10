@@ -8,7 +8,6 @@
   }
 }
 
-/* Breakpoints */
 @theme {
   --breakpoint-mobile-small: 375px;
   --breakpoint-mobile: 480px;
@@ -19,39 +18,32 @@
 }
 
 @theme {
-  /* Dark Primary */
   --color-dark-primary: #f2ca50;
   --color-dark-primary-hover: #e5bd45;
   --color-dark-primary-active: #d4af37;
 
-  /* Dark Background */
   --color-dark-background: #0e0e0e;
   --color-dark-background-secondary: #131313;
   --color-dark-card: #1b1b1b;
   --color-dark-card-hover: #1c1b1b;
   --color-dark-muted: #201f1f;
 
-  /* Dark Border */
   --color-dark-border: #2a2a2a;
   --color-dark-border-light: #353534;
   --color-dark-border-strong: #4d4635;
 
-  /* Dark Text */
   --color-dark-text-secondary: #e5e2e1;
   --color-dark-text-muted: #d0c5af;
 
-  /* Dark Gold */
   --color-dark-accent: #e0b83f;
   --color-dark-accent-dark: #3c2f00;
 
-  /* Dark Success */
   --color-dark-success: #22c55e;
   --color-dark-success-hover: #16a34a;
   --color-dark-success-light: #4ade80;
   --color-dark-success-soft: #86efac;
   --color-dark-success-bg: #13281b;
 
-  /* Dark Danger */
   --color-dark-danger: #e16b6b;
   --color-dark-danger-hover: #d95c5c;
   --color-dark-danger-dark: #a54242;
@@ -60,11 +52,9 @@
   --color-dark-danger-bright: #f87171;
   --color-dark-danger-bg: #2a1414;
 
-  /* Misc */
   --color-dark-panel: #2a2416;
 }
 
-/* DEFAULT = DARK */
 @layer base {
   html {
     direction: rtl;
@@ -101,8 +91,6 @@
 .animate-luxScrollFast {
   animation: luxScrollFast 1.1s ease-in-out infinite;
 }
-
-/* استایل پایه */
 
 @font-face {
   font-family: "YekanBakh-Light";

@@ -10,7 +10,7 @@ const base = {
   draggablePercent: 30,
 
   className:
-    "!rounded-[18px] !overflow-hidden !p-0 !shadow-[0_20px_60px_rgba(0,0,0,.45)] backdrop-blur-xl",
+    "!w-[calc(100vw-32px)] mobile-small:!mx-auto mobile:!mx-auto tablet-portrait:!mx-0 mobile:!w-[calc(100vw-32px)] tablet-portrait:!w-[360px] !max-w-[360px] !rounded-[18px] !overflow-hidden !p-0 !shadow-[0_20px_60px_rgba(0,0,0,.45)] backdrop-blur-xl",
 
   bodyClassName: "!m-0 !p-0",
 };
@@ -24,9 +24,12 @@ const ToastContent = ({
   badgeBorder,
   iconColor,
 }) => (
-  <div className="flex items-center gap-4 px-5 py-4" style={{ background: bg }}>
+  <div
+    className="flex items-center gap-3 tablet-portrait:gap-4 px-3 py-3 mobile:px-4 tablet-portrait:px-5 tablet-portrait:py-4"
+    style={{ background: bg }}
+  >
     <div
-      className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border"
+      className="flex h-9 w-9 mobile:h-10 mobile:w-10 tablet-portrait:h-11 tablet-portrait:w-11 shrink-0 items-center justify-center rounded-full border"
       style={{
         background: badgeBg,
         borderColor: badgeBorder,
@@ -35,12 +38,12 @@ const ToastContent = ({
       {icon(iconColor)}
     </div>
 
-    <div className="flex flex-col">
-      <span className="text-[15px] tracking-wide font-semibold text-white">
+    <div className="min-w-0 flex-1">
+      <span className="block truncate text-[13px] mobile:text-sm tablet-portrait:text-[15px] font-semibold tracking-wide text-white">
         {title}
       </span>
 
-      <span className="mt-1 text-[13px] leading-6 font-semibold text-zinc-400">
+      <span className="mt-0.5 block break-words text-[12px] mobile:text-[13px] tablet-portrait:leading-6 leading-5 font-medium text-zinc-400">
         {text}
       </span>
     </div>
@@ -54,7 +57,6 @@ export const notify = {
         title="عملیات موفق"
         text={text}
         bg="#13281B"
-        border="rgba(74,222,128,.12)"
         badgeBg="rgba(74,222,128,.10)"
         badgeBorder="rgba(74,222,128,.18)"
         iconColor="#4ADE80"
@@ -74,7 +76,6 @@ export const notify = {
         title="عملیات ناموفق"
         text={text}
         bg="#2A1414"
-        border="rgba(225,107,107,.12)"
         badgeBg="rgba(225,107,107,.10)"
         badgeBorder="rgba(225,107,107,.18)"
         iconColor="#E16B6B"
